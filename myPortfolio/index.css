@@ -1,0 +1,38 @@
+body {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 701px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40vh;
+  }
+  #toggleNav {
+    display: none;
+  }
+}
+
+svg {
+  cursor: pointer;
+}
+a {
+  text-align: center !important;
+  position: relative;
+  bottom: 8px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+
+  #toggleNav {
+    background-color: white;
+    border: 0;
+
+    margin-left: 96%;
+  }
+}
